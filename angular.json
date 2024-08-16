@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "quill-test:build:production"
+              "buildTarget": "quill-test:build:production"
             },
             "development": {
-              "browserTarget": "quill-test:build:development"
+              "buildTarget": "quill-test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "quill-test:build"
+            "buildTarget": "quill-test:build"
           }
         },
         "test": {
