@@ -1,1 +1,18 @@
-<quill-editor class="content-editor"> </quill-editor>
+<!--quill-editor #editor theme="snow" [placeholder]="editorConfig.placeholder" (onEditorChanged)="onEditorChange($event)"></quill-editor-->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button id="closePopup">Cerrar</button>
+    <div id="popupContent"></div>
+  </div>
+</div>
+<div id="editor"></div>
+<div id="wordCounter"></div>
+<div style="display: flex">
+  <div id="spellCheck"></div>
+  &nbsp;
+  <button id="spellCheckStatus" (click)="spellCheckStatus()">
+    Ver errores
+  </button>
+</div>
+<button (click)="save()">Grabar</button>
+<div id="spellCheckContent"></div>
